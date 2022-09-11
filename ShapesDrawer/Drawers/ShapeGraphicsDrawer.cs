@@ -25,8 +25,8 @@ namespace ConsoleApp1.Drawers
 
         public void Draw(Circle circle)
         {
-            var width = circle.Radius + Constants.Offset;
-            var height = circle.Radius + Constants.Offset;
+            var width = circle.Radius + Constants.Offset * 2;
+            var height = circle.Radius + Constants.Offset * 2;
             var image = new Bitmap(width, height);
             using var graphics = Graphics.FromImage(image);
             using var pen = new Pen(Color.Red);
